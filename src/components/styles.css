@@ -53,3 +53,58 @@
     flex-wrap: wrap;
     width: 90%;
 }
+
+.todos__single {
+    display: flex;
+    width: 30%;
+    border-radius: 10px;
+    margin-top: 15px;
+    background-color: lightgray;
+    padding: 20px;
+    box-shadow: 0 0 10px black;
+    transition: 0.2s all;
+}
+
+.todos__single--text {
+    display: flex;
+    flex: 1;
+    border: none;
+    font-size: 1.4rem;
+    word-wrap: break-word;
+}
+
+.todos__single--text:focus {
+    outline: none;
+}
+
+.icon {
+    font-size: 1.5rem;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+@media (max-width: 700px) {
+    .input {
+        width: 90%;
+    }
+
+    .todos {
+        width: 90%;
+    }
+
+    .todos__single {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .todos__single {
+        width: 50%;
+    }
+}
+
+.icon:hover {
+    color: blue;
+    transform: scale(1.2);
+}
